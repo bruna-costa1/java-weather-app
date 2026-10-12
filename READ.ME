@@ -1,0 +1,9 @@
+# Java Weather Station
+
+A Java TCP client-server application that retrieves historical weather records by date.
+
+The application loads weather observations from a CSV dataset into a HashMap. A client sends a date request to the server over a TCP connection, and the server returns the corresponding serialized Weather object.
+
+**Technologies and concepts:** Java, TCP sockets, object serialization, HashMap, file I/O, executor services, and client-server architecture.
+
+**Current limitations:** Requests are handled sequentially, and the application uses a local CSV dataset rather than a live weather API. Future improvements include more robust connection handling, input validation, automated tests, and graceful shutdown.
